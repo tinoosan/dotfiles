@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -76,6 +78,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 export EDITOR='nvim'
+export HYPRSHOT_DIR="~/screenshots"
 
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color'

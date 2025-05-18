@@ -1,3 +1,5 @@
+local servers = { "gopls", "lua_ls", "pyright", "ts_ls" }
+
 return {
   {
     "windwp/nvim-autopairs",
@@ -11,9 +13,7 @@ return {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     cmd = { "Trouble", "TroubleToggle", "TroubleClose", "TroubleRefresh" },
-    opts = {}, -- uses defaults
   },
-
 
   {
     "hrsh7th/nvim-cmp",
@@ -58,12 +58,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {
-          "lua_ls",
-          "gopls",
-          "pyright",
-          "ts_ls",
-        },
+        ensure_installed = servers,
       })
     end,
   },
@@ -90,7 +85,7 @@ return {
         keymap("n", "]d", vim.diagnostic.goto_next, opts)
         keymap("n", "<leader>e", vim.diagnostic.open_float, opts)
 
-        --Trouble Keymaps
+        -- Trouble keymaps
         keymap("n", "<leader>xx", "<cmd>Trouble<cr>", opts)
         keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
         keymap("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>", opts)
@@ -98,8 +93,6 @@ return {
         keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", opts)
         keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
       end
-
-      local servers = { "lua_ls", "gopls", "pyright", "ts_ls" }
 
       for _, server in ipairs(servers) do
         lspconfig[server].setup({
@@ -110,3 +103,4 @@ return {
     end,
   },
 }
+
