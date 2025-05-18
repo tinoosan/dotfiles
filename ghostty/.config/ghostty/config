@@ -20,7 +20,7 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 font-family = "JetBrainsMono Nerd Font"
-font-size = 14
+font-size = 13
 #background-opacity=0.95
 window-padding-x = 2
 #
