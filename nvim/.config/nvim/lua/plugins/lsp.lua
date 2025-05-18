@@ -10,12 +10,6 @@ return {
   },
 
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    cmd = { "Trouble", "TroubleToggle", "TroubleClose", "TroubleRefresh" },
-  },
-
-  {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-nvim-lsp",
@@ -84,14 +78,6 @@ return {
         keymap("n", "[d", vim.diagnostic.goto_prev, opts)
         keymap("n", "]d", vim.diagnostic.goto_next, opts)
         keymap("n", "<leader>e", vim.diagnostic.open_float, opts)
-
-        -- Trouble keymaps
-        keymap("n", "<leader>xx", "<cmd>Trouble<cr>", opts)
-        keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
-        keymap("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>", opts)
-        keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>", opts)
-        keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", opts)
-        keymap("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", opts)
       end
 
       for _, server in ipairs(servers) do
