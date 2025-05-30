@@ -78,11 +78,13 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 export EDITOR='nvim'
-export HYPRSHOT_DIR="~/screenshots"
+HYPRSHOT_DIR="~/screenshots"
+DEV="/home/tinoosan/personal/dev"
+
 
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color'
-
+alias vi='nvim'
 #eval "$(starship init zsh)"
 eval "$(tmuxifier init -)"
 eval "$(zoxide init --cmd cd zsh)"
