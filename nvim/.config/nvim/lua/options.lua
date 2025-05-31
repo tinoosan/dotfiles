@@ -6,7 +6,7 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.cmd("set nowrap")
 vim.cmd("set guicursor=i:block")
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("rose-pine")
 
 
 -- File explorer
