@@ -10,8 +10,7 @@
   "lualine.nvim": { "branch": "master", "commit": "0c6cca9f2c63dadeb9225c45bc92bb95a151d4af" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "67da97f8c2fd12d05427bb485ce07ee6418e0a51" },
   "mason.nvim": { "branch": "main", "commit": "8024d64e1330b86044fed4c8494ef3dcd483a67c" },
-  "neo-tree.nvim": { "branch": "v3.x", "commit": "f481de16a0eb59c985abac8985e3f2e2f75b4875" },
-  "nui.nvim": { "branch": "main", "commit": "7cd18e73cfbd70e1546931b7268b3eebaeff9391" },
+  "none-ls.nvim": { "branch": "main", "commit": "db2a48b79cfcdab8baa5d3f37f21c78b6705c62e" },
   "nvim-autopairs": { "branch": "master", "commit": "4d74e75913832866aa7de35e4202463ddf6efd1b" },
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
   "nvim-dap": { "branch": "master", "commit": "b0f983507e3702f073bfe1516846e58b56d4e42f" },
@@ -27,7 +26,8 @@
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
   "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
+  "vim-kitty": { "branch": "main", "commit": "309b8451cff8ad77a24ee332b5d9db4162f1655d" },
   "vim-test": { "branch": "master", "commit": "b0c3e13249699a522c8b472ff79eff40d2935476" },
-  "vim-tmux-navigator": { "branch": "master", "commit": "ad4c04239d970981942d6a3e1195a770df09d0d7" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "412c474e97468e7934b9c217064025ea7a69e05e" },
   "vimux": { "branch": "master", "commit": "7db6b2f79d432ee3820668b1d4625311dbe1d0ad" }
 }

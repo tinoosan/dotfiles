@@ -3,10 +3,12 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config = {
+
+  enable_wayland = false,
   automatically_reload_config = true,
   font = wezterm.font("JetBrainsMonoNL Nerd Font Propo", {weight="DemiBold", stretch="Normal", style="Normal"}),
-  font_size = 14.5,  -- Adjust the font size as needed
-  color_scheme = "Catppuccin Macchiato",
+  font_size = 16,  -- Adjust the font size as needed
+  color_scheme = "Catppuccin Mocha",
   -- enable_tab_bar = true,  -- Enable the tab bar
   hide_tab_bar_if_only_one_tab = true,  -- Hide the tab bar if there's only one tab
   -- tab_bar_at_bottom = false,  -- Set this to true if you want the tab bar at the bottom
@@ -15,12 +17,12 @@ config = {
 
   window_close_confirmation = "NeverPrompt",
   window_decorations = "RESIZE", -- Disable the title bar but enable the resizable border
-  default_cursor_style = "BlinkingBar",
+  default_cursor_style = "SteadyBlock",
   window_padding = {
-    left = 20,
-    right = 20,
-    top = 20,
-    bottom = 10,
+    left = 0,
+    right = 0,
+    top = 0,
+    bottom = 0,
   },
 
   colors = {
