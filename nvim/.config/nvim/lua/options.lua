@@ -6,24 +6,22 @@ vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.cmd("set nowrap")
 vim.cmd("set guicursor=i:block")
-vim.cmd.colorscheme("rose-pine")
-
+vim.cmd.colorscheme("tokyonight")
 
 -- File explorer
-vim.keymap.set("n", "<leader>fe",
-function()
-  vim.cmd("Ex")
-  end)
+vim.keymap.set("n", "<leader>fe", function()
+	vim.cmd("Ex")
+end)
 
-vim.keymap.set("n", "<leader>n",
+--[[vim.keymap.set("n", "<leader>n",
   function()
     vim.cmd("Neotree filesystem reveal left")
-  end)
+  end)]]
 
-vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
-vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
-vim.keymap.set('n', '<C-h>', ':wincmd h<CR>')
-vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
+vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
+vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
+vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
+vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 
 --[[vim.cmd([[
   highlight Normal guibg=NONE ctermbg=NONE
@@ -33,5 +31,3 @@ vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
   highlight StatusLine guibg=NONE ctermbg=NONE
   highlight EndOfBuffer guibg=NONE ctermbg=NONE
 ]]
-
-
