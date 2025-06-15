@@ -29,7 +29,6 @@ zinit light Aloxaf/fzf-tab
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::aws
 
 # Load completions
@@ -78,9 +77,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 fi
 
 export EDITOR='nvim'
-HYPRSHOT_DIR="~/screenshots"
-DEV="/home/tinoosan/personal/dev"
-
 
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color'
