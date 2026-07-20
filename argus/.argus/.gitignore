@@ -1,0 +1,13 @@
+# Credentials and machine-local trust
+auth.json
+trust.json
+
+# Runtime state and generated data
+agents/
+docs/
+extensions/
+state/
+speech/
+
+# Documentation server output
+doc-servers/*.log

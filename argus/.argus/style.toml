@@ -1,0 +1,180 @@
+[components]
+  [components.welcome]
+    foreground = "#d4d4d4"
+    muted_foreground = "#737373"
+    accent_foreground = "#4FC7B0"
+    border_foreground = "#525252"
+    label_foreground = "#737373"
+  [components.user_message]
+    foreground = "#ede9fe"
+    background = "#343541"
+    padding_x = 1
+    padding_y = 1
+    full_width = true
+  [components.assistant_message]
+    foreground = ""
+    marker_foreground = "#4FC7B0"
+    padding_x = 1
+    padding_y = 1
+  [components.markdown]
+    foreground = ""
+    heading_foreground = "#4FC7B0"
+    link_foreground = "#4FC7B0"
+    link_url_foreground = ""
+    inline_code_foreground = "#4FC7B0"
+    code_block_foreground = ""
+    code_block_border_foreground = ""
+    code_block_palette = ""
+    quote_foreground = ""
+    quote_border_foreground = ""
+    list_marker_foreground = ""
+    padding_x = 0
+    padding_y = 0
+  [components.composer]
+    idle_foreground = "#6b7280"
+    running_foreground = "#4FC7B0"
+    error_foreground = "#ef4444"
+    session_name_foreground = "#101715"
+    session_name_background = "#4FC7B0"
+  [components.thinking]
+    foreground = "#737373"
+    italic = true
+    padding_x = 1
+    padding_y = 0
+  [components.footer]
+    foreground = "#737373"
+    context_foreground = ""
+    context_warning_foreground = ""
+    context_critical_foreground = ""
+    show_usage = true
+    show_session = false
+    show_model = true
+    show_reasoning = true
+  [components.command_picker]
+    foreground = "#d4d4d4"
+    selected_foreground = "#4FC7B0"
+    selected_background = ""
+    description_foreground = "#737373"
+    scroll_foreground = "#737373"
+    no_matches_foreground = "#737373"
+  [components.file_picker]
+    foreground = "#d4d4d4"
+    selected_foreground = "#4FC7B0"
+    selected_background = ""
+    description_foreground = "#737373"
+    scroll_foreground = "#737373"
+    no_matches_foreground = "#737373"
+  [components.session_info]
+    foreground = "#d4d4d4"
+    label_foreground = "#737373"
+    border_foreground = "#525252"
+    title_foreground = "#4FC7B0"
+    padding_x = 1
+    padding_y = 0
+  [components.command_result]
+    foreground = "#d4d4d4"
+    error_foreground = "#fca5a5"
+    border_foreground = "#525252"
+    title_foreground = "#4FC7B0"
+    padding_x = 1
+    padding_y = 0
+  [components.command_panel]
+    foreground = "#d4d4d4"
+    background = "#171923"
+    border_foreground = "#4FC7B0"
+    title_foreground = "#4FC7B0"
+    padding_x = 2
+    padding_y = 1
+  [components.extension_panel]
+    foreground = "#d4d4d4"
+    background = "#171923"
+    border_foreground = "#4FC7B0"
+    title_foreground = "#4FC7B0"
+    padding_x = 2
+    padding_y = 1
+  [components.queued_messages]
+    foreground = "#d4d4d4"
+    label_foreground = "#737373"
+    hint_foreground = "#737373"
+    border_foreground = "#525252"
+    title_foreground = "#4FC7B0"
+    padding_x = 1
+    padding_y = 0
+  [components.bash_terminal]
+    foreground = ""
+    background = ""
+    command_foreground = ""
+    running_foreground = "#4FC7B0"
+    running_dim_foreground = "#285F58"
+    success_foreground = "#a6e3a1"
+    status_foreground = ""
+    hidden_foreground = "#737373"
+    error_foreground = "#fca5a5"
+    gutter_foreground = ""
+    padding_x = 1
+    padding_y = 1
+    max_lines = 5
+  [components.code_preview]
+    palette = "catppuccin-mocha"
+    foreground = ""
+  [components.working_status]
+    foreground = "#4FC7B0"
+  [components.tool_card]
+    foreground = ""
+    muted_foreground = "#737373"
+    running_foreground = "#4FC7B0"
+    success_foreground = "#a6e3a1"
+    error_foreground = "#fca5a5"
+    gutter_foreground = "#525252"
+    max_lines = 8
+
+  [components.read_file]
+    foreground = ""
+    path_foreground = "#4FC7B0"
+    notice_foreground = "#737373"
+    running_foreground = "#4FC7B0"
+    running_dim_foreground = "#285F58"
+    success_foreground = "#a6e3a1"
+    error_foreground = "#fca5a5"
+    line_number_foreground = "#525252"
+    show_line_numbers = true
+    padding_x = 1
+  [components.write_file]
+    foreground = ""
+    path_foreground = "#4FC7B0"
+    notice_foreground = "#737373"
+    running_foreground = "#4FC7B0"
+    running_dim_foreground = "#285F58"
+    success_foreground = "#a6e3a1"
+    added_foreground = "#a6e3a1"
+    removed_foreground = "#f38ba8"
+    added_background = ""
+    removed_background = ""
+    error_foreground = "#fca5a5"
+    line_number_foreground = "#525252"
+    show_line_numbers = true
+    padding_x = 1
+    max_lines = 10
+    max_diff_lines = 48
+  [components.edit_file]
+    path_foreground = "#4FC7B0"
+    running_foreground = "#4FC7B0"
+    running_dim_foreground = "#285F58"
+    success_foreground = "#a6e3a1"
+    added_foreground = "#a6e3a1"
+    removed_foreground = "#f38ba8"
+    added_background = ""
+    removed_background = ""
+    context_foreground = "#6c7086"
+    error_foreground = "#f38ba8"
+    padding_x = 1
+    max_diff_lines = 48
+
+[extensions."com.argus.permissions"]
+  accent = "#00cfbe"
+  background = "#161823"
+  muted = "#737373"
+  info = "#4fc7b0"
+  success = "#a6e3a1"
+  warning = "#fbbf24"
+  danger = "#f87171"

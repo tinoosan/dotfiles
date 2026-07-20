@@ -1,0 +1,43 @@
+[default]
+  model = "openai-codex:gpt-5.6-sol"
+  [default.reasoning]
+    effort = "medium"
+
+[context]
+  include_thinking = true
+
+[compaction]
+  enabled = true
+  reserve_tokens = 16384
+  keep_recent_tokens = 20000
+
+[queue]
+  steering_mode = "one-at-a-time"
+  follow_up_mode = "one-at-a-time"
+
+[speech]
+  provider = "whisper.cpp"
+  model = "base.en"
+  language = "en"
+
+[extensions]
+  disabled = ["com.argus.alpaca-finance", "com.example.echo"]
+  default_project_trust = "ask"
+
+[extensions.config."com.argus.agents".models]
+  openai-codex = "openai-codex:gpt-5.6-terra"
+  openai = "openai:gpt-5.6-terra"
+
+[extensions.config."com.argus.permissions"]
+  bypass_rules = "enforce-all"
+  destructive_operations = "always-ask"
+
+[keybindings]
+  "app.message.dequeue" = ["alt+up"]
+  "app.message.followUp" = ["alt+enter"]
+  "tui.input.newLine" = ["ctrl+j", "shift+enter"]
+  "tui.input.submit" = ["enter"]
+  "tui.input.tab" = ["tab"]
+  "tui.select.cancel" = ["escape"]
+  "tui.select.down" = ["down"]
+  "tui.select.up" = ["up"]
