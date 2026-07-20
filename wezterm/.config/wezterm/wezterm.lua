@@ -3,29 +3,31 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config = {
-
-  enable_wayland = false,
   automatically_reload_config = true,
   font = wezterm.font("JetBrainsMonoNL Nerd Font Propo", {weight="DemiBold", stretch="Normal", style="Normal"}),
   font_size = 16,  -- Adjust the font size as needed
-  color_scheme = "Catppuccin Mocha",
+  color_scheme = "Catppuccin Macchiato",
+  window_background_opacity = 0.85,
   -- enable_tab_bar = true,  -- Enable the tab bar
-  hide_tab_bar_if_only_one_tab = true,  -- Hide the tab bar if there's only one tab
+  -- Hide tab bar if only one tab (keeps single-tab clean)
+  hide_tab_bar_if_only_one_tab = true,
   -- tab_bar_at_bottom = false,  -- Set this to true if you want the tab bar at the bottom
   -- use_fancy_tab_bar = true,  -- Enable fancy tab bar for rounded corners and better styling
   -- tab_max_width = 30,  -- Set the maximum width for tabs
 
   window_close_confirmation = "NeverPrompt",
-  window_decorations = "RESIZE", -- Disable the title bar but enable the resizable border
+  -- Keep title bar style from wezterm
+  window_decorations = "RESIZE",
   default_cursor_style = "SteadyBlock",
-  window_padding = {
-    left = 0,
-    right = 0,
-    top = 0,
-    bottom = 0,
-  },
+  -- window_padding = {
+  --   left = 20,
+  --   right = 20,
+  --   top = 20,
+  --   bottom = 10,
+  -- },
 
   colors = {
+    background = "#000000",
     tab_bar = {
       background = "#1e1e2e",  -- Background color for the tab bar
 
